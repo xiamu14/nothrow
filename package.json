@@ -1,6 +1,6 @@
 {
   "name": "@redchili/nothrow",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Type-safe error handling library with Result pattern",
   "type": "module",
   "private": false,
