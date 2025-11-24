@@ -1,5 +1,9 @@
-type Result<T, E extends { reason: string; stack?: string }> = T | Err<E>;
-type Err<E extends { reason: string; stack?: string }> = { ok: false } & E;
+export type Result<T, E extends { reason: string; stack?: string }> =
+  | T
+  | Err<E>;
+export type Err<E extends { reason: string; stack?: string }> = {
+  ok: false;
+} & E;
 
 export function ok<
   T,
